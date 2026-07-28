@@ -33,7 +33,7 @@ while True:
             # 3 arguments, where to draw (frame),what to draw (hand_landmarks,the 21 points),how to connect the points(HAND_CONNECTIONS)
     
     cv2.imshow("Hand Landmarks",frame) # shows frame in a window
-    if cv2.waitKey(1) & 0xFF==ord("q"): # mem loc of q is FF 
+    if cv2.waitKey(1) & 0xFF==ord("q"): # 0xFF is blank memory loc for a character
         break
 
 cap.release() # release frees webcam
